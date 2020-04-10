@@ -7,7 +7,7 @@ Servo space;
 
 void setup() {
   space.attach(9);
-  space.write(20);
+  space.write(0);
 
   Serial.begin(9600);
 }
