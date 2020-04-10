@@ -8,10 +8,15 @@ Servo space;
 void setup() {
   space.attach(9);
   space.write(20);
+
+  Serial.begin(9600);
 }
 
 void loop() {
   float ldr = analogRead(LDR);
+
+  Serial.println(ldr);
+  
   if(ldr > LIM){
     space.write(20);
     delay(150);
